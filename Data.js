@@ -1,9 +1,8 @@
-// Part 1: Refactor Old Code 
-// Inserted code from Looping Code Part 3
-
 let str = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
+// console.log(str);
 
-let i = 0
+// console.log(cell1, cell2, cell3, cell4);
+// empty string to concat
 let cell1 = "";
 let cell2 = "";
 let cell3 = "";
@@ -15,32 +14,18 @@ let commas = 0;
 // char - everything else - bottom 
 
 // create variables for new row and new cells
+for (let i = 0; i < str.length; i++) {
 
-// store each row as an array
-  let newArray = []
-// let rowArray = [cell1, cell2, cell3, cell4];
-// store row content as a string 
-
-// saving current char at the current index into a variable for ease
-// let current = str[i];
-
-
-// create 2D array  
-// newArray.push();
-// multidimensional array: 
-  
-// loop for 2D array 
-for (let i = 0; i < str.length; i++){
+    // saving current char at the current index into a variable for ease
     let current = str[i];
-    if (current == ","){
+
+    if (current == ",") {
         // move to the next cell
         commas++;
     }
-    else if (current == "\n"){
+    else if (current == "\n") {
         // Print all cells
-        let rowArray = [cell1, cell2, cell3, cell4];
-        newArray.push(rowArray);
-        // console.log(cell1, cell2, cell3, cell4);
+        console.log(cell1, cell2, cell3, cell4);
         commas = 0;
         cell1 = "";
         cell2 = "";
@@ -58,9 +43,5 @@ for (let i = 0; i < str.length; i++){
         }
     }
     if(i +1 == str.length){
-        let rowArray = [cell1, cell2, cell3, cell4];
-        newArray.push(rowArray);
     }
-}
-console.log(newArray)
-// keep last console outside of the for loop!!! 
+}console.log(cell1, cell2, cell3, cell4)
