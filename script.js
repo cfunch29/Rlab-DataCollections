@@ -129,16 +129,39 @@ console.log(newArray)
 
 // PART 4
 console.log("Part4")
+// use pop to remove last element
 
 let part3Sol = [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
  { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
  { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
- { id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }]
+ { id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }];
 
+lastArray = part3Sol.pop();
 
-
-
-//  use splice to remove the last element from the array 
-
-part3Sol.splice(0,3);
 console.log(part3Sol)
+
+//  use splice to add object at index
+
+let newestArray = part3Sol.splice(1, 0, { id: "48", name: "Barry", occupation: "Runner", age: "25" });
+
+console.log(part3Sol)
+
+part3Sol.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" })
+console.log(part3Sol)
+
+let sum = 0
+let objCount = 0
+let avg = 0
+
+for(let i = 0; i<part3Sol.length; i++){
+    sum += part3Sol[i];
+    let avg = sum / part3Sol.length;
+}
+
+console.log("The total sum of age is: " + sum);
+console.log("The average age is: " + avg);
+
+
+
+
+
