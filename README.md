@@ -43,7 +43,11 @@
 <!-- iterate through the object to filter the elements/objects into the new array -->
 
 ## Part 4 - Sorting and Manipulating Data
-
+- Use array methods to sort and manipulate the data 
+    1. remove the last element from the sorted array (use pop)
+    2. add object at index 1 (use splice)
+    3. add object to the end of the array (use push)
+    4. use the values of each object within the array and the array's length property to calculate the average age of the group using a loop 
 
 ## Part 5 - Full Circle
-- Transform data back into a CSV formatted string
+- Transform data back into a CSV formatted string (use nested loops, join (,) and join (\n))

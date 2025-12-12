@@ -48,7 +48,7 @@ for (let i = 0; i < str.length; i++) {
 }
 console.log(cell1, cell2, cell3, cell4)
 
-
+// PART 2
 console.log("part2")
 
 // store each row as an array
@@ -100,20 +100,23 @@ for (let i = 0; i < str.length; i++) {
     }
 }
 console.log(newArray)
-console.log("part3")
 
-// let header = newArray[0];
-// let obj = {}
+
+// // PART 3
+// console.log("part3")
+
+// let header = ["id", "name", "occupation", "age"]
+
+
 // // iterate thru to store objects into the new array with the newly declared header
-// for (r = 0; r < newArray.length; r++) {
-//     let row = newArray[r];
+// for (let r = 0; r < newArray.length; r++) {
 //     let obj = {};
 
-//     // create header row
-//     for (let h = 0; h < header.length; h++) {
-//         obj[header[h]] == row[h];
+//     // // create header row
+//     for (let h = 0; h < header[r].length; h++) {
+       
 //     }
-//     newArray.push(obj);
+//    newArray.push(obj);
 // }
 // console.log(newArray)
 
@@ -124,3 +127,18 @@ console.log("part3")
 
 // keep last console outside of the for loop!!! 
 
+// PART 4
+console.log("Part4")
+
+let part3Sol = [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+ { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+ { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+ { id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }]
+
+
+
+
+//  use splice to remove the last element from the array 
+
+part3Sol.splice(0,3);
+console.log(part3Sol)
