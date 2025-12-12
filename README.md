@@ -15,6 +15,7 @@
 ## Part 2 - Expanding Functionality
 1. Declare a variable that stores the number of columns in each row of data within the CSV
     - dynamic variable based on the first row of data (use arrays and strings)
+        - arrays declared using square bracket notation "[]"
         - each row = array/container * **square bracket notation** * 
         - contents of the row = string
     - now make it 2-dimensional
@@ -24,9 +25,25 @@
     - Cache 2D array in variable for later
 
 ## Part 3 - Transforming Data 
+- transform rows into objects
+    - objects are keyed collections of zero or more properties 
+        - most common data structure in OOP
+        - declared using curly brackers "{}"
+    -properties are key:value pairs * **(dictionaries)** *
+        - key = string (look something up with the key)
+        - value = expression (reads the value or "definition")
+- for each row of data in the result array, create an object where the key of each value is the heading for that value's column (create an object = header)
+    <!-- row 1 = header  -->
+    - convert keys to lowercase 
+    <!-- figure out how to convert to lowercase -->
+- store objects in an array, in original order
+    - ie: id, name, occupation, age
+- do not need to create object for header row itself
 
+<!-- iterate through the object to filter the elements/objects into the new array -->
 
 ## Part 4 - Sorting and Manipulating Data
+
 
 ## Part 5 - Full Circle
 - Transform data back into a CSV formatted string
