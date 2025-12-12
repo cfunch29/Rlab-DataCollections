@@ -152,7 +152,7 @@ console.log(part3Sol)
 let sum = 0
 let objCount = 0
 let avg = 0
-
+// need to iterate thru array to find each object's age and find the average of all object's ages
 for(let i = 0; i<part3Sol.length; i++){
     sum += part3Sol[i];
     let avg = sum / part3Sol.length;
@@ -160,6 +160,13 @@ for(let i = 0; i<part3Sol.length; i++){
 
 console.log("The total sum of age is: " + sum);
 console.log("The average age is: " + avg);
+
+
+
+
+
+// PART 5
+console.log("Part5")
 
 
 
